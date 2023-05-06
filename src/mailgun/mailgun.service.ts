@@ -26,8 +26,7 @@ export type EmailOptions = MailgunMessageData;
 export class MailgunService {
   private readonly mailgun: Client;
   constructor(
-    @Inject(MAILGUN_CONFIGURATION)
-    private readonly configuration: Options,
+    @Inject(MAILGUN_CONFIGURATION) private readonly configuration: Options,
   ) {
     this.mailgun = new Mailgun(FormData).client(configuration);
   }
