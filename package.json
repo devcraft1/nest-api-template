@@ -28,7 +28,9 @@
     "@nestjs/platform-express": "^9.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "4.4.1",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "mailgun.js": "^8.0.6",
+    "form-data": "^4.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "9.4.0",
