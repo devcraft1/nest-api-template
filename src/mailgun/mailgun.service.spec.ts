@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { MAILGUN_CONFIGURATION } from './tokens/tokens';
+import { MAILGUN_CONFIGURATION } from './tokens';
 import { MailgunService } from './mailgun.service';
 
 describe('MailgunService', () => {

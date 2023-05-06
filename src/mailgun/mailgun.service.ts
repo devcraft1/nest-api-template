@@ -1,5 +1,5 @@
 import { Injectable, Inject } from '@nestjs/common';
-import { MAILGUN_CONFIGURATION } from '../../mail/mailgun/tokens/tokens';
+import { MAILGUN_CONFIGURATION } from './tokens';
 import Mailgun from 'mailgun.js';
 import Client from 'mailgun.js/client';
 import Options from 'mailgun.js/interfaces/Options';

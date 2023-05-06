@@ -2,7 +2,7 @@ import { Module, Provider } from '@nestjs/common';
 import Options from 'mailgun.js/interfaces/Options';
 import { OptionsAsync } from './configuration';
 import { MailgunService } from './mailgun.service';
-import { MAILGUN_CONFIGURATION } from './tokens/tokens';
+import { MAILGUN_CONFIGURATION } from './tokens';
 
 @Module({})
 export class MailgunModule {
