@@ -3,15 +3,14 @@ import Options from 'mailgun.js/interfaces/Options';
 import { OptionsAsync } from './configuration';
 import { MailgunService } from './mailgun.service';
 import { MAILGUN_CONFIGURATION } from './tokens/tokens';
-import { config as credentials } from '../../common/index';
 
 @Module({})
 export class MailgunModule {
   public static forRoot(config: Options) {
-    config = {
-      username: credentials.config.MAILGUN_DOMAIN,
-      key: credentials.config.MAILGUN_API_KEY,
-    };
+    // config = {
+    //   username: credentials.config.MAILGUN_DOMAIN,
+    //   key: credentials.config.MAILGUN_API_KEY,
+    // };
     return {
       module: MailgunModule,
       //   controllers: [
